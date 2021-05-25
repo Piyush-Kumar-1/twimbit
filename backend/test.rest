@@ -1,0 +1,64 @@
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "name":"piyush",
+    "email":"a@p.com",
+    "password":"123456"
+}
+
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email":"ap@p.com",
+    "password":"123456"
+}
+
+###
+POST  http://localhost:5000/me
+
+### 
+POST http://localhost:5000/logout
+
+###
+POST http://localhost:5000/post
+Content-Type: application/json
+
+{
+    "post":"gggggggggggggggggggg",
+    "details":"xxxxxxxxxxxxxxxxxxxxxxx",
+    "username":"piyush"
+}
+
+###
+POST http://localhost:5000/comment
+Content-Type: application/json
+
+{
+    "id":"60ac5a225638212ee8147e3f",
+    "user":"kumar",
+    "comment":"hello"
+}
+
+###
+
+POST http://localhost:5000/like
+Content-Type: application/json
+
+{
+ "id":"60ac56487af4321a90169dbd"   
+}
+
+###
+GET http://localhost:5000/getAll
+
+###
+GET http://localhost:5000/get
+Content-Type: application/json
+
+{
+    "id":"60ac5a225638212ee8147e3f"
+}
